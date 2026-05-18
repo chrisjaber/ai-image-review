@@ -117,6 +117,9 @@ public/index.html                  — Drag-and-drop test UI
 .env.example                       — Required environment variables
 ```
 
+## To deploy to AWS Elastic Beanstalk create .zip of project
+`zip -r deploy.zip . -x "*.git*" -x "node_modules/*" -x ".env" -x ".DS_Store"`
+
 ## Profanity list
 
 Edit `profanity.txt` to add or remove terms. Each line is one word or phrase. Matching is case-insensitive and uses word boundaries (whole words only).
